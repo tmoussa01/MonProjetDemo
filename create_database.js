@@ -12,7 +12,6 @@ connection.query(
     function(err, results, fields) {
       debug(err);
       debug(results); // results contains rows returned by server
-      debug(fields); // fields contains extra meta data about results, if available
       connection.close();
     }
 );
