@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des étudiants</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for (let i = 0; i < results.length; i++ ) { %>
+            <tr>
+                <td><%= results[i].firstName %></td>
+                <td><%= results[i].lastName %></td>
+            </tr>
+            <% } %>
+        </tbody>
+    </table>
+
+    <form name="/" method="post">
+        <label id="firstName">First Name : </label>
+        <input type="text" value="" id='firstName'/><br><br>
+        <label id="lastName">Last Name : </label>
+        <input type="text" value="" id='lastName'/><br><br>
+        <input type="submit" value="Enregistrer" id='submit'/><br><br>
+
+    </form>
+</body>
+</html>

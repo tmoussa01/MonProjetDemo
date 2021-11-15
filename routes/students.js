@@ -14,6 +14,7 @@ router.get('/', function(req, res, next) {
         debug(err);
       } else {
         res.json(results);
+        res.render('student', { results: results});
       }
     }
   );
